@@ -9,7 +9,7 @@ jobs:
           #uses: actions/hello-world-javascript-action@714607abe96dc33dd6031e1c1745a12839cef5e1 #COMMIT
           #uses: actions/hello-world-javascript-action@v1.1 #RELEASE
           #uses: actions/hello-world-javascript-action@master #BRANCH
-          uses: actions/hello-world-javascript-action@v1
+          uses: actions/hello-world-javascript-action@master
           with:
             who-to-greet: John
         #- name: Log Gretting Time
