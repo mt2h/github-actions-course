@@ -11,8 +11,8 @@ jobs:
           echo $GITHUB_SHA #ID commit
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
-          echo "{{ github.token }}"
-          #git clone git@github:mt2h/$GITHUB_REPOSITORY
+          echo "${{ github.token }}"
+          #git clone git@github:$GITHUB_REPOSITORY
           #git checkout $GITHUB_SHA
       - name: Checkout
         uses: actions/checkout@v1
