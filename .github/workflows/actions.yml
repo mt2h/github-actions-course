@@ -11,6 +11,8 @@ on:
       - master
       #- 'feature/*'
       #- 'feature/**'
+      #- 'feature/feat[ABC]'
+      #- 'feature/feat[ABC]+'
       #- '!feature/featC' #not apply in this branch
     #tags:
     #  - v1.*
