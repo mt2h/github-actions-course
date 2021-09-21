@@ -12,13 +12,13 @@ on:
       #- 'feature/*'
       #- 'feature/**'
       #- '!feature/featC' #not apply in this branch
-    tags:
-      - v1.*
+    #tags:
+    #  - v1.*
     #tags-ignore:
     #  - v1.*
-    paths:
-      - '**.js'
-      - '!filename.js' #not apply in this file
+    #paths:
+    #  - '**.js'
+    #  - '!filename.js' #not apply in this file
     #paths-ignore:
     #  - 'docs/**'
     #branches-ignore:
