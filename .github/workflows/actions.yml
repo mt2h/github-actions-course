@@ -9,6 +9,20 @@ on:
   push: #pull_request
     branches:
       - master
+      #- 'feature/*'
+      #- 'feature/**'
+      #- '!feature/featC' #not apply in this branch
+    tags:
+      - v1.*
+    #tags-ignore:
+    #  - v1.*
+    paths:
+      - '**.js'
+      - '!filename.js' #not apply in this file
+    #paths-ignore:
+    #  - 'docs/**'
+    #branches-ignore:
+    #  - null
   #pull_request:
   #  types: [closed, assigned, opened, reopened]
 jobs:
