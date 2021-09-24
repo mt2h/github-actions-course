@@ -11,6 +11,12 @@ git checkout -b develop
 git checkout master
 ```
 
+## Secrets
+
+```bash
+gpg --symmetric --cipher-algo AES256 secret.jso #1234
+```
+
 ## On: Dispatch
 
 Post Authorization
