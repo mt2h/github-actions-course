@@ -18,7 +18,7 @@ jobs:
         run: |
           curl -x POST http://localhost:3001/api/user -H 'Content-Type: application/json' -d '{"username":"hello","address":"dwded"}'
       - name: Get users
-        run: curl http://localhost:3001/api/user
+        run: curl http://localhost:3001/api/users
     #container:
     #  image: node:13.5.0-alpine3.10
     #steps:
