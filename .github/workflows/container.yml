@@ -15,14 +15,15 @@ jobs:
           - "27017:27017"
     steps:
       - name: Post a user
-        run: |
-          curl -x POST http://localhost:3001/api/user -H 'Content-Type: application/json' -d '{"username":"hello","address":"dwded"}'
+        run: "curl -X POST http://localhost:3001/api/user -H 'Content-Type: application/json' -d '{\"username\":\"hello\",\"address\":\"dwded\"}'"
       - name: Get users
         run: curl http://localhost:3001/api/users
-    #container:
-    #  image: node:13.5.0-alpine3.10
-    #steps:
-    #  - name: Log node version
-    #    run: |
-    #      node -v
-    #      cat /etc/os-release
+  #node-docker:
+  #  runs-on: ubuntu-latest
+  #  container:
+  #    image: node:13.5.0-alpine3.10
+  #  steps:
+  #    - name: Log node version
+  #      run: |
+  #        node -v
+  #        cat /etc/os-release
