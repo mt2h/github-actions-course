@@ -1,0 +1,13 @@
+name: Tes Matrix
+on: push
+
+jobs:
+  to_run:
+     runs-on: ubuntu-latest
+     steps:
+      - name: firt task
+        run: echo "first task"
+      - name: second task
+        run: echo "second task"
+      - name: third task
+        run: echo "third task"
