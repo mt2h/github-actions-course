@@ -6,9 +6,7 @@ jobs:
   to_run:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        types: [web, pos, b2b] 
+ 
 
     steps:
 
@@ -22,6 +20,9 @@ jobs:
         run: echo "third task"
 
       - name: fourth_one_task
+        strategy:
+          matrix:
+            types: [web, pos, b2b]
         env:
           TYPE: ${{ matrix.types }}
         run: echo $TYPE
