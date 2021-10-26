@@ -1,13 +1,27 @@
-name: Tes Matrix
+name: TesMatrix
 on: push
 
 jobs:
+
   to_run:
-     runs-on: ubuntu-latest
-     steps:
-      - name: firt task
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        types: [web, pos, b2b] 
+
+    steps:
+
+      - name: first task
         run: echo "first task"
+
       - name: second task
         run: echo "second task"
+
       - name: third task
         run: echo "third task"
+
+      - name: fourth_one_task
+        env:
+          TYPE: ${{ matrix.types }}
+        run: echo $TYPE
