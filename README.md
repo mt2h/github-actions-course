@@ -28,5 +28,32 @@ Post Parameters
 Post JSON Data
 ![POST_JSON](./img/dispatch/POST_JSON_DATA.png)
 
+## Project
+
+```bash
+#create react app
+cd project/
+sudo snap install node --classic
+npx create-react-app react-app --use-npm
+
+#local test
+cd react-app/
+npm run start
+
+npm run test
+CI=true #the npm run test doesn't heard changes
+npm run test -- --coverage
+
+npm run build
+
+#deploy app on surge
+sudo npm install --global surge
+surge
+#trite-grandmother.surge.sh
+```
+
+## Surge
+![Board](./img/surge.png)
+
 ## Board
 ![Board](./img/board.jpeg)
