@@ -50,6 +50,15 @@ npm run build
 sudo npm install --global surge
 surge
 #trite-grandmother.surge.sh
+
+#verify
+npm install --save-dev --save-exact prettier
+npx prettier --check "**/*.js"
+npx prettier --write "**/*.js"
+npx prettier --check "**/*.js"
+
+npx prettier --write "**/*.{js,jsx.yml,yaml,.json.css,scss,md}"
+npm run format:check
 ```
 
 ## Surge
@@ -57,3 +66,7 @@ surge
 
 ## Board
 ![Board](./img/board.jpeg)
+
+
+
+# THIS PROJECT CONTINUE IN https://github.com/mt2h/react-app 
