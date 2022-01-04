@@ -68,5 +68,4 @@ npm run format:check
 ![Board](./img/board.jpeg)
 
 
-
-# THIS PROJECT CONTINUE IN https://github.com/mt2h/react-app 
+THIS PROJECT CONTINUE IN https://github.com/mt2h/react-app 
